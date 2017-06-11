@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int X,Y;int i;
+    int N;
+    scanf("%d",&N);
+    while(N--){int sum=0;
+    scanf("%d %d",&X,&Y);
+    for(i=X;i<X+(2*Y);i++){
+        if(i%2!=0){
+
+            sum+=i;
+        }
+    }
+    printf("%d\n",sum);
+    }
+return 0;
+}
