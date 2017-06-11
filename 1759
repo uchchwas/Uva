@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+     long long int N;
+    scanf("%lld",&N);int i;
+    for(i=1;i<N;i++){
+        printf("Ho ");
+    }
+    printf("Ho!\n");
+return 0;
+}
