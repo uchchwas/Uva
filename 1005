@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    double A,B,c,d;
+    double MEDIA;
+    scanf("%lf %lf",&A,&B);
+    c=A*3.5+B*7.5;
+    d=3.5+7.5;
+    printf("MEDIA = %.5lf\n",c/d);
+    return 0;
+
+
+}
