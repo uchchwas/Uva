@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n;int count=0;int month=0;
+    scanf("%d",&n);
+
+   loop:
+       if(n>=365){
+        n=n-365;
+        count++;
+        goto loop;
+       }
+       else if(n>=30){
+        n=n-30;
+        month++;
+        goto loop;
+       }
+
+
+
+
+       printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",count,month,n);
+
+
+}
