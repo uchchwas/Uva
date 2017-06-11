@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    float M[12][12];float sum=0.0;
+    int i,j;char ch;
+    scanf("%c",&ch);
+ if(ch=='O'){
+    for(i=0;i<12;i++){
+        for(j=0;j<12;j++){
+            scanf("%f",&M[i][j]);
+
+        }
+    }
+    int k=10;
+    for(i=0;i<11;i++){
+        for(j=0;j<=k;j++){
+            sum+=M[i][j];
+        }
+        k-=1;
+
+    }}
+else if(ch=='S'||ch=='M'){
+        for(i=0;i<12;i++){
+        for(j=0;j<12;j++){
+            scanf("%f",&M[i][j]);
+
+        }
+    }
+    int k=10;
+    for(i=0;i<11;i++){
+        for(j=0;j<=k;j++){
+            sum+=M[i][j];
+        }
+        k-=1;
+
+    }
+sum=sum/66.0;
+
+}
+    printf("%.1f\n",sum);
+
+}
