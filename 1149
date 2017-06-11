@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int A,N;
+    scanf("%d",&A);int i;int sum=0;
+
+    return1: scanf("%d",&N);
+    if(N>0){
+    while(N--){
+        sum+=A;
+        A++;
+    }
+    printf("%d\n",sum);
+    }
+    else
+        goto return1;
+
+}
