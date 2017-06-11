@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int N;int X;
+    scanf("%d",&N);
+
+    int i;
+    while(N--){
+            scanf("%d",&X);{
+                if(X%2==0 && X>0){
+                    printf("EVEN POSITIVE\n");
+                }
+                else if(X%2==0 && X<0){
+                    printf("EVEN NEGATIVE\n");
+                }
+                else if(X%2!=0 && X>0){
+                    printf("ODD POSITIVE\n");
+                }
+                else if(X%2!=0 && X<0){
+                    printf("ODD NEGATIVE\n");
+                }
+                else
+                    printf("NULL\n");
+            }
+
+    }
+
+}
