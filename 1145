@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int X=0, Y=0;
+    int i,j;
+    int k=1;
+   /* printf("Enter X:");
+    scanf("%d",&X);
+    printf("Enter Y:"); */
+    scanf("%d %d",&X, &Y);
+
+    if(X<Y)
+    {
+        for(i=0;i<=ceil(Y/X);i++)
+        {
+            for(j=1;j<=X;j++)
+            {
+                if(j==X)
+                {
+                    printf("%d",k);
+                    printf("\n");
+                }
+                else
+                {
+                    printf("%d ",k);
+                }
+
+                if(k<Y)
+                {
+                    k++;
+                }
+                else
+                {
+                    exit(0);
+                }
+            }
+        }
+
+    }
+    else
+    {
+        printf("ERROR. X should be less than Y");
+    }
+}
