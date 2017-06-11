@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int X,Z,count=0;int sum=0;
+    scanf("%d",&X);
+
+    ret: scanf("%d",&Z);
+    if(X<Z){
+    do{
+            sum+=X;
+            X++;
+            count++;
+
+    }while(sum<Z);
+
+
+    printf("%d\n",count);
+}
+
+else
+    goto ret;
+}
