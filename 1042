@@ -1,0 +1,45 @@
+#include<stdio.h>
+void after(int *x);
+void before(int *b);
+int main()
+{
+    int x[5],b[3],*y;
+    int i;
+    y=&b;
+    for(i=0;i<3;i++){
+    scanf("%d",&x[i]);
+    }
+
+    for(i=0;i<3;i++){
+        b[i]=x[i];
+    }
+
+     after(&x);
+     printf("\n");
+     before(&b);
+
+}
+void before(int *b)
+{
+  int i;
+  for(i=0;i<3;i++){
+    printf("%d\n",b[i]);
+  }
+}
+void after(int *x)
+{
+    int i,j;int t;
+    for(i=0;i<3;i++){
+        for(j=i+1;j<3;j++){
+            if(*(x+i)>*(x+j)){
+                t=*(x+i);
+                *(x+i)=*(x+j);
+                *(x+j)=t;
+            }
+        }
+    }
+    for(i=0;i<3;i++){
+    printf("%d\n",*(x+i));
+    }
+}
+
