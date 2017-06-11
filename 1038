@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int X,Y;float c;
+    scanf("%d",&X);
+    scanf("%d",&Y);
+    int x=X,y=Y;
+    if(x==1){
+        c=((float)(y)*4.00);
+
+    }
+    else if(x==2){
+                c=((float)(y)*4.50);
+
+    }
+    else if(x==3){
+                c=((float)(y)*5.00);
+
+    }
+    else if(x==4){
+                c=((float)(y)*2.00);
+
+    }
+    else if(x==5){
+                c=((float)(y)*1.50);
+
+    }
+
+    printf("Total: R$ %.2f\n",c);
+}
