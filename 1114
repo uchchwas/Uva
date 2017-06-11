@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int x=2002;int y;
+
+        while(1){
+                scanf("%d",&y);{
+
+
+
+    if(y==x){
+        printf("Acesso Permitido\n");
+        break;
+    }
+    else if(y!=x){
+        printf("Senha Invalida\n");
+
+    }
+    }
+        }
+
+}
