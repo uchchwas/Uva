@@ -1,2 +1,2 @@
-# Uva
-Solved problems in UVA
+# URI
+Solved problems in URI
